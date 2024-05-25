@@ -14,8 +14,8 @@ provider "aws" {
   profile = "setra-sso-profile"
 }
 
-resource "aws_s3_dsdbucket" "my_bucket" {
-  bucket = "my-unique-bucket-name-paset-12399" # Replace with your desired bucket name
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "my-unique-bucket-name-paset-313131" # Replace with your desired bucket name
   acl    = "private" # Sets the ACL to private (default is private if not specified)
   
   tags = {
