@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-unique-bucket-name-paset-313131" # Replace with your desired bucket name
+  bucket = "my-unique-bucket-name-paset-3131312" # Replace with your desired bucket name
   acl    = "private" # Sets the ACL to private (default is private if not specified)
   
   tags = {
