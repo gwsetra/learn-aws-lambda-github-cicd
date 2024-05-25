@@ -81,6 +81,10 @@ jobs:
         role-to-assume: arn:aws:iam::228900581273:role/github-oidc-provide-role
         retry-max-attempts: 3
 
+    # Hello from AWS: WhoAmI
+    - name: Sts GetCallerIdentity
+      run: aws sts get-caller-identity
+
     - name: Terraform fmt
       id: fmt
       run: terraform fmt -check
