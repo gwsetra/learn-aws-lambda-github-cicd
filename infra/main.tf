@@ -11,7 +11,6 @@ terraform {
 
 provider "aws" {
   region  = "eu-west-1"
-  profile = "setra-sso-profile"
 }
 
 resource "aws_s3_bucket" "my_bucket" {
